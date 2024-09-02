@@ -1,0 +1,9 @@
+services:
+  hugo:
+    build:
+      context: .
+      dockerfile: Dockerfile.development
+    volumes:
+      - ./site:/src
+    ports:
+      - 1313:1313
